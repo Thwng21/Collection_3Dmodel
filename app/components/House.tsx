@@ -58,13 +58,13 @@ const House = () => {
 
     // Loaders
     const dracoLoader = new DRACOLoader();
-    dracoLoader.setDecoderPath("/draco/"); // 👈 đặt trong public/draco
+    dracoLoader.setDecoderPath("/"); // 👈 DRACO files in public root
 
     const loader = new GLTFLoader();
     loader.setDRACOLoader(dracoLoader);
 
     loader.load(
-      "/models/gltf/LittlestTokyo.glb", // 👈 đặt trong public/models/gltf
+      "/LittlestTokyo.glb", // 👈 Model file in public root
       (gltf) => {
         const model = gltf.scene;
 
