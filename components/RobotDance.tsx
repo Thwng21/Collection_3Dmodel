@@ -119,18 +119,20 @@ const RobotDance = () => {
       (error) => console.error("❌ Load FBX lỗi:", error)
     );
 
-    const clock = new THREE.Clock();
+const timer = new THREE.Timer();
+timer.connect(document);
 
-    function animate() {
-      requestAnimationFrame(animate);
+function animate() {
+  requestAnimationFrame(animate);
 
-      const delta = clock.getDelta();
+  timer.update();
 
-      if (mixer) mixer.update(delta);
+  const delta = timer.getDelta();
 
-      controls.update();
-      renderer.render(scene, camera);
-    }
+  if (mixer) mixer.update(delta);
+
+  renderer.render(scene, camera);
+}
 
     // ================= RESIZE =================
     const handleResize = () => {

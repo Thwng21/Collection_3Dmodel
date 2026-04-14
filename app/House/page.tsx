@@ -1,5 +1,5 @@
 import React from 'react'
-import RobotDance from '../../components/RobotDance'
+import RobotDance from '../../components/House'
 
 const page = () => {
   return (
