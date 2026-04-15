@@ -30,6 +30,12 @@ export default function Home() {
           <DropdownMenuItem>
             <Link href="/House">House</Link>
           </DropdownMenuItem>
+          <DropdownMenuItem>
+            <Link href="/House">House</Link>
+          </DropdownMenuItem>
+          <DropdownMenuItem>
+            <Link href="/Girl">Girl</Link>
+          </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
 
